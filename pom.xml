@@ -75,13 +75,4 @@
     </pluginRepository>
   </pluginRepositories>
 
-<!--
-  <distributionManagement>
-    <snapshotRepository>
-      <id>com.github.kkkon.test</id>
-      <url>file:///${HOME}/content/repositories/release</url>
-    </snapshotRepository>
-  </distributionManagement>
--->
-
 </project>

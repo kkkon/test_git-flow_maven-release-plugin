@@ -55,7 +55,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>com.github.kkkon.test</id>
-      <url>http://localhost:8081/content/repositories/snapshots</url>
+      <url>dav:http://localhost:8081/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
