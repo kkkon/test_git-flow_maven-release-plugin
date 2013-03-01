@@ -8,7 +8,7 @@
 
   <groupId>com.github.kkkon.test.test_git-flow_maven-release-plugin</groupId>
   <artifactId>job-strongauth-simple</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Job StrongAuthSimple Plugin</name>
 
@@ -68,20 +68,13 @@
     </repository>
   </repositories>
 
+<!--
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>dav:http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-
-<!--
-  <distributionManagement>
-    <snapshotRepository>
-      <id>com.github.kkkon.test</id>
-      <url>file:///${HOME}/content/repositories/release</url>
-    </snapshotRepository>
-  </distributionManagement>
 -->
 
 </project>
