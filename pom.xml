@@ -35,8 +35,8 @@
 
 
   <scm>
-    <connection>scm:git:ssh://github.com/kkkon/test_git-flow_maven-release-plugin.git</connection>
-    <developerConnection>scm:git:ssh://github.com/kkkon/test_git-flow_maven-release-plugin.git</developerConnection>
+    <connection>scm:git:ssh://github.com:kkkon/test_git-flow_maven-release-plugin.git</connection>
+    <developerConnection>scm:git:ssh://github.com:kkkon/test_git-flow_maven-release-plugin.git</developerConnection>
     <url>https://github.com/kkkon/test_git-flow_maven-release-plugin.git</url>
     <tag>HEAD</tag>
   </scm>
