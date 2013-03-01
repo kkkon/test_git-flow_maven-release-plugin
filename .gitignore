@@ -4,3 +4,13 @@
 *.jar
 *.war
 *.ear
+
+target
+.classpath
+.settings
+.project
+*.iml
+*.ipr
+*.iws
+work
+.idea/
