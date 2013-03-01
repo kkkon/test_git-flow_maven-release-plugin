@@ -2,16 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.github.kkkon.test.test_git-flow_maven-release-plugin</groupId>
-    <artifactId>jenkins</artifactId>
-    <version>1.26</version>
-  </parent>
-
   <groupId>com.github.kkkon.test.test_git-flow_maven-release-plugin</groupId>
-  <artifactId>plugin</artifactId>
-  <name>Jenkins plugin POM</name>
-  <version>1.466</version>
+  <artifactId>jenkins</artifactId>
+  <name>Jenkins POM</name>
+  <version>1.26</version>
   <packaging>pom</packaging>
 
   <dependencies>
@@ -59,6 +53,11 @@
 
 
   <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>com.github.kkkon.test</id>
+      <url>dav:http://localhost:8081/content/repositories/release</url>
+    </repository>
     <snapshotRepository>
       <id>com.github.kkkon.test</id>
       <url>dav:http://localhost:8081/content/repositories/snapshots</url>
