@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.github.kkkon.test.test_git-flow_maven-release-plugin</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.466</version>
+  </parent>
+
+  <groupId>com.github.kkkon.test.test_git-flow_maven-release-plugin</groupId>
+  <artifactId>job-strongauth-simple</artifactId>
+  <version>0.6-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Job StrongAuthSimple Plugin</name>
+
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/Job+StrongAuthSimple+Plugin</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <licenses>
+    <license>
+      <name>The MIT license</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>kkkon</id>
+      <name>Kiyofumi Kondoh</name>
+    </developer>
+  </developers>
+
+
+  <scm>
+    <connection>scm:git:ssh://github.com:kkkon/test_git-flow_maven-release-plugin.git</connection>
+    <developerConnection>scm:git:ssh://github.com:kkkon/test_git-flow_maven-release-plugin.git</developerConnection>
+    <url>https://github.com/kkkon/test_git-flow_maven-release-plugin.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.3.2</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.scm</groupId>
+            <artifactId>maven-scm-provider-gitexe</artifactId>
+            <version>1.8.1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+    </plugins>
+  </build>
+
+
+  <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
+  <repositories>
+    <repository>
+      <id>com.github.kkkon.test</id>
+      <url>file:///${HOME}/content/repositories/release</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+<!--
+  <distributionManagement>
+    <snapshotRepository>
+      <id>com.github.kkkon.test</id>
+      <url>file:///${HOME}/content/repositories/release</url>
+    </snapshotRepository>
+  </distributionManagement>
+-->
+
+</project>
