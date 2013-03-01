@@ -77,4 +77,11 @@
   </pluginRepositories>
 -->
 
+  <distributionManagement>
+    <snapshotRepository>
+      <id>com.github.kkkon.test</id>
+      <url>dav:http://localhost:8081/content/repositories/release</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>
